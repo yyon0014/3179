@@ -55,7 +55,7 @@
             }
           },
           {
-            "calculate": "datum.total_cases", 
+            "calculate": "datum.total_cases + 0.1", 
             "as": "Active Cases"
           }
       ],
