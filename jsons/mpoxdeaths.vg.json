@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Total monkeypox active cases (2022-2024)",
+  "title": "Total monkeypox deaths by country (2022-2024)",
   "width": 800,
   "height": 400,
   "layer": [
@@ -50,13 +50,13 @@
               },
               "key": "location",
               "fields": [
-                "total_cases"
+                "total_deaths"
               ]
             }
           },
           {
-            "calculate": "datum.total_cases + 0.1", 
-            "as": "Active Cases"
+            "calculate": "datum.total_deaths + 0.1", 
+            "as": "Death Count"
           }
       ],
       
@@ -65,11 +65,11 @@
       },
       "encoding": {
         "color": {
-          "field": "Active Cases",
+          "field": "Death Count",
           "type": "quantitative",
           "scale": {
             "type": "log",
-            "scheme": "orangered"
+            "scheme": "greys"
           }
         },
         "tooltip": [
@@ -79,9 +79,9 @@
             "title": "Country"
           },
           {
-            "field": "total_cases", 
+            "field": "total_deaths", 
             "type": "quantitative",
-            "title": "Total Cases"
+            "title": "Death Count"
           }
         ]
       }

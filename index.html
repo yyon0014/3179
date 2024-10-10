@@ -17,8 +17,12 @@
 
 <script type="text/javascript">
 
-  var js1 = "jsons/vegamap.vg.json";
+  var js1 = "jsons/mpoxcases.vg.json";
+  var js2 = "jsons/mpoxdeaths.vg.json";
   vegaEmbed('#vis2', js1).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  vegaEmbed('#vis2', js2).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 </script>
