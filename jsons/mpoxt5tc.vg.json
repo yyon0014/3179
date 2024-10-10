@@ -5,17 +5,19 @@
     },
     "data": {
         "url": "https://raw.githubusercontent.com/yyon0014/3179/refs/heads/main/data/mpoxt5prog.csv",
-        "format": {
-            "parse": {
-                "date": "%d/%m/%Y"
-            }
-        }
+        "format": {"type": "csv"}
     },
     "width": 400,
     "height": 400,
     "mark": "line",
     "encoding": {
-        "x": {"field": "date", "type": "ordinal"},
-        "y": {"field": "total_cases", "type": "quantitative"}
+        "x": {"field": "date", "type": "temporal"},
+        "y": {"field": "total_cases", "type": "quantitative"},
+        "color": {"field": "location", "type": "nominal"},
+        "tooltip":[
+        {"field": "location", "title": "Location", "type": "nominal"},
+        {"field": "total_cases", "title": "Registered Cases", "type": "quantitative"},
+        {"field": "date", "title": "Date", "type": "temporal"}
+        ]
     }
 }
