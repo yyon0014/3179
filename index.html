@@ -12,22 +12,26 @@
   
 </head>
 <body>
-    <h1>The Spread of Monkeypox Cases</h1>  
-    <div id="visca"></div>
-    <script type="text/javascript">
-        var js1 = "jsons/mpoxcases.vg.json";
-        vegaEmbed('#visca', js1).then(function(result) {
-            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-        }).catch(console.error);
-    </script>
-
-    <div id="visde"></div>
-    <script type="text/javascript">
-        var js2 = "jsons/mpoxdeaths.vg.json";
-        vegaEmbed('#visde', js2).then(function(result) {
-            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-        }).catch(console.error);
-    </script>
+    <div class="main-container">
+        <h1>Monkeypox Virus</h1>  
+        
+        <div id="visca">
+            <script type="text/javascript">
+                var js1 = "jsons/mpoxcases.vg.json";
+                vegaEmbed('#visca', js1).then(function(result) {
+                    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+                }).catch(console.error);
+            </script>
+        </div> 
+    
+        <div id="visde">
+            <script type="text/javascript">
+                var js2 = "jsons/mpoxdeaths.vg.json";
+                vegaEmbed('#visde', js2).then(function(result) {
+                    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+                }).catch(console.error);
+            </script> 
+        </div>
         
     </div>
 
