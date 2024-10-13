@@ -6,10 +6,7 @@
     "data": {
         "url": "https://raw.githubusercontent.com/yyon0014/3179/refs/heads/main/data/mpoxt5prog.csv",
         "format": {
-            "type": "csv",
-            "parse": {
-                "date": "date:\"%d/%m/%Y\""
-            }
+            "type": "csv"
         }
                     
     },
