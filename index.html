@@ -18,12 +18,10 @@
             The Potential Pandemic
         </h1>  
         <p>
-            107,363 cases of monkeypox have been registered throughout the world since September 15, 2024, 
+            <highlight>107,363 cases</highlight> of monkeypox with <dhighlight>234 deaths</dhighlight> have been registered throughout the world since September 15, 2024, 
             where the number is still growing.
         </p>
-        <p>
-            In that time 60.7% of the cases that have been registered resides in 5 countries.
-        </p>
+        <hr>
         <div class="maps">
             <div id="visca">
                 <script type="text/javascript">
@@ -42,7 +40,22 @@
                 </script> 
             </div>
         </div>
-        
+        <hr>
+        <p>
+            <highlight>60.7%</highlight> of the monkeypox cases that are registered resides in 5 countries in the latest given records.
+        </p>
+        <hr>
+        <div class="graph">
+            <div id="vislg">
+                <script type="text/javascript">
+                    var js2 = "jsons/mpoxt5tc.vg.json";
+                    vegaEmbed('#vislg', js2).then(function(result) {
+                        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+                    }).catch(console.error);
+                </script> 
+            </div>
+        </div>
+        <hr>
     </div>
 
 </body>

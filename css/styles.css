@@ -15,11 +15,25 @@ hr {
     text-align:center;
     color:#3a3c18;
 }
+p {
+    font-family: "Raleway", sans-serif;
+    font-size: 24px;
+    padding: 20px
+}
+highlight {
+    font-size: 36px;
+    color: #7d0505
+}
+dhighlight {
+    font-size: 24px;
+    color: #3a0808
+}
+
 .main-container {
     font-family: "Raleway", sans-serif;
     color: #3a3c18;
     width: 1080px;
-    height: 1920px;
+    height: 2160px;
     margin: 0 auto;
     flex-wrap: wrap;
     justify-content: center;
@@ -28,18 +42,28 @@ hr {
     border: 5px solid #3a3c18;
 }
 .maps {
-    padding-left: 155px;
+    padding-left: 15px;
+}
+.graph {
+    padding-left: 250px;
 }
 
 #visca {
     font-family: "Raleway", sans-serif;
 	top: 10px;
 	bottom: 100px;
-    padding: 20px;
+    padding: 25px;
 }
 #visde {
     font-family: "Raleway", sans-serif;
-	top: 30px;
+	top: 10px;
 	bottom: 100px;
-    padding: 10px;
+    padding: 30px;
+}
+
+#vislg {
+    font-family: "Raleway", sans-serif;
+	top: 10px;
+	bottom: 100px;
+    padding: 25px;
 }

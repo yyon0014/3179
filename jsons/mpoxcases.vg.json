@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Total monkeypox active cases by country (2022-2024)",
-  "width": 600,
-  "height": 300,
+  "width": 900,
+  "height": 450,
   "background": "#fffeee",
   "layer": [
     {
