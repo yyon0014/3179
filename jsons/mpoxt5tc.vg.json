@@ -10,9 +10,12 @@
         }
                     
     },
+    "config":{
+    },
     "width": 400,
     "height": 400,
     "mark": "line",
+    "background": "#fffeee",
     "encoding": {
         "x": {"field": "date", "type": "temporal"},
         "y": {"field": "total_cases", "type": "quantitative"},
@@ -23,4 +26,5 @@
         {"field": "date", "title": "Date", "type": "temporal"}
         ]
     }
+    
 }

@@ -3,6 +3,7 @@
   "title": "Total monkeypox active cases by country (2022-2024)",
   "width": 600,
   "height": 300,
+  "background": "#fffeee",
   "layer": [
     {
       "data": {
@@ -56,7 +57,7 @@
           },
           {
             "calculate": "datum.total_cases + 0.1", 
-            "as": "Active Cases"
+            "as": "Recorded Cases"
           }
       ],
       
@@ -65,10 +66,11 @@
       },
       "encoding": {
         "color": {
-          "field": "Active Cases",
+          "field": "Recorded Cases",
           "type": "quantitative",
           "scale": {
             "type": "log",
+            "domain": [1, 40000],
             "scheme": "orangered"
           }
         },
@@ -81,7 +83,7 @@
           {
             "field": "total_cases", 
             "type": "quantitative",
-            "title": "Total Cases"
+            "title": "Recorded Cases"
           }
         ]
       }

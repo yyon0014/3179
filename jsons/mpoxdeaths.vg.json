@@ -3,6 +3,7 @@
   "title": "Total monkeypox deaths by country (2022-2024)",
   "width": 600,
   "height": 300,
+  "background": "#fffeee",
   "layer": [
     {
       "data": {

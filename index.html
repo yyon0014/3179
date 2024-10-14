@@ -7,30 +7,40 @@
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
   
   
-  <!-- CSS file -->
+  <!-- CSS file and styling-->
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./css/styles.css" media="all">
   
 </head>
 <body>
     <div class="main-container">
-        <h1>Monkeypox Virus</h1>  
-        
-        <div id="visca">
-            <script type="text/javascript">
-                var js1 = "jsons/mpoxcases.vg.json";
-                vegaEmbed('#visca', js1).then(function(result) {
-                    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-                }).catch(console.error);
-            </script>
-        </div> 
-    
-        <div id="visde">
-            <script type="text/javascript">
-                var js2 = "jsons/mpoxdeaths.vg.json";
-                vegaEmbed('#visde', js2).then(function(result) {
-                    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-                }).catch(console.error);
-            </script> 
+        <h1>
+            The Potential Pandemic
+        </h1>  
+        <p>
+            107,363 cases of monkeypox have been registered throughout the world since September 15, 2024, 
+            where the number is still growing.
+        </p>
+        <p>
+            In that time 60.7% of the cases that have been registered resides in 5 countries.
+        </p>
+        <div class="maps">
+            <div id="visca">
+                <script type="text/javascript">
+                    var js1 = "jsons/mpoxcases.vg.json";
+                    vegaEmbed('#visca', js1).then(function(result) {
+                        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+                    }).catch(console.error);
+                </script>
+            </div> 
+            <div id="visde">
+                <script type="text/javascript">
+                    var js2 = "jsons/mpoxdeaths.vg.json";
+                    vegaEmbed('#visde', js2).then(function(result) {
+                        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+                    }).catch(console.error);
+                </script> 
+            </div>
         </div>
         
     </div>

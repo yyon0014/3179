@@ -1,25 +1,44 @@
+body {
+    background-color: black;
+  }
 h1 {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "IBM Plex Serif", serif;
     font-size: 48px;
+    height: 70px;
     text-align: center;
-    padding: 10px;
-    
+    color: #fffeee;
+    width: 100%;
+    background-color: #3a3c18
+}
+hr {
+    width:96%;
+    text-align:center;
+    color:#3a3c18;
 }
 .main-container {
+    font-family: "Raleway", sans-serif;
+    color: #3a3c18;
     width: 1080px;
     height: 1920px;
-    padding: 20px;
     margin: 0 auto;
     flex-wrap: wrap;
     justify-content: center;
     overflow: hidden;
+    background-color:#fffeee;
+    border: 5px solid #3a3c18;
 }
+.maps {
+    padding-left: 155px;
+}
+
 #visca {
+    font-family: "Raleway", sans-serif;
 	top: 10px;
 	bottom: 100px;
     padding: 20px;
 }
 #visde {
+    font-family: "Raleway", sans-serif;
 	top: 30px;
 	bottom: 100px;
     padding: 10px;
