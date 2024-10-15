@@ -48,11 +48,38 @@
         <div class="graph">
             <div id="vislg">
                 <script type="text/javascript">
-                    var js2 = "jsons/mpoxt5tc.vg.json";
-                    vegaEmbed('#vislg', js2).then(function(result) {
+                    var js3 = "jsons/mpoxt5tc.vg.json";
+                    vegaEmbed('#vislg', js3).then(function(result) {
                         // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
                     }).catch(console.error);
                 </script> 
+            </div>
+        </div>
+        <hr>
+        <div class="compare">
+            <p>
+                Following patterns of <dhighlight>H1N1</dhighlight>, a pattern of an explosion of infections can be seen in the form of spikes of cases that signal a pandemic.
+            </p>
+            <hr>
+            <div class="left">
+                <div id="vismpg">
+                    <script type="text/javascript">
+                        var js4 = "jsons/mpoxgrowth.vg.json";
+                        vegaEmbed('#vismpg', js4).then(function(result) {
+                            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+                        }).catch(console.error);
+                    </script> 
+                </div>
+            </div>
+            <div class="right">
+                <div id="vising">
+                    <script type="text/javascript">
+                        var js4 = "jsons/h1n1growth.vg.json";
+                        vegaEmbed('#vising', js4).then(function(result) {
+                            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+                        }).catch(console.error);
+                    </script> 
+                </div>
             </div>
         </div>
         <hr>

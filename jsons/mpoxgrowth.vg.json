@@ -1,0 +1,30 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+        "text": "New cases of mpox overtime (2022-2024)"
+    },
+    "data": {
+        "url": "https://raw.githubusercontent.com/yyon0014/3179/refs/heads/main/data/monkeypox.csv",
+        "format": {
+            "type": "csv"
+        }
+                    
+    },
+    "config":{
+    },
+    "width": 250,
+    "height": 250,
+    "mark": "area",
+    "background": "#fffeee",
+    "encoding": {
+        "x": {"field": "date", "type": "temporal", "title": "Date"},
+        "y": {"aggregate":"sum", "field": "new_cases", "type": "quantitative", "title": "New Cases"},
+        "color": {"field": "location", "type": "nominal"},
+        "tooltip":[
+        {"field": "location", "title": "Location", "type": "nominal"},
+        {"field": "new_cases", "title": "New Cases", "type": "quantitative"},
+        {"field": "date", "title": "Date", "type": "temporal"}
+        ]
+    }
+    
+}

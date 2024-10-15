@@ -33,7 +33,7 @@ dhighlight {
     font-family: "Raleway", sans-serif;
     color: #3a3c18;
     width: 1080px;
-    height: 2160px;
+    height: 2860px;
     margin: 0 auto;
     flex-wrap: wrap;
     justify-content: center;
@@ -47,6 +47,27 @@ dhighlight {
 .graph {
     padding-left: 250px;
 }
+
+.compare {
+    width: 100%;
+    align-content: center;
+    margin: auto;
+}
+
+.left {
+    width: 500px;
+    float: left;
+    height: 500px;
+}
+
+.right {
+    width: 500px;
+    float: left;
+    height: 500px;
+    padding-left: 50px;
+}
+
+
 
 #visca {
     font-family: "Raleway", sans-serif;
@@ -66,4 +87,16 @@ dhighlight {
 	top: 10px;
 	bottom: 100px;
     padding: 25px;
+}
+
+#vismpg {
+    font-family: "Raleway", sans-serif;
+	top: 10px;
+	bottom: 100px;
+}
+
+#vising {
+    font-family: "Raleway", sans-serif;
+	top: 10px;
+	bottom: 100px;
 }
